@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "local bootstrap test task3_2",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "local bootstrap test task3_2"
+	}
+}

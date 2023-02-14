@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+    @media(max-width:501px){
+     
+     body{
+         background-color:white;
+     }
+     .container{
+            display: grid;
+            background-color:white;
+            grid-template-columns: repeat(4,1fr);
+             grid-template-rows: repeat(9,170px); 
+          
+        }
+        .container>div{
+          
+            color: white;
+            font-size: 30px;
+            padding: 10px;
+            margin: 10px;
+        }
+        .child1{
+            
+            grid-column: 1/5;
+            grid-row: 1/2;
+            background-color: blue;
+        }
+        .child2{
+            grid-column: 1/5;
+            grid-row: 2/4;
+            background-color:orangered;
+        }
+        .child3{
+            grid-column: 1/5;
+            grid-row: 4/6;
+            background-color:green;
+        }
+        .child4{
+            grid-column: 1/5;
+            grid-row: 6/8;
+            background-color:orangered;
+        }
+        .child5{
+           
+            grid-column: 1/5;
+            grid-row: 8/10;
+            background-color: blue;
+        }
+
+ }
+ @media(min-width:501px)
+ {
+    body{
+         background-color:black;
+     }
+     .container{
+            display: grid;
+            background-color:white;
+            grid-template-columns: repeat(4,1fr);
+             grid-template-rows: repeat(5,170px); 
+          
+        }
+        .container>div{
+          
+            color: white;
+            font-size: 30px;
+            padding: 10px;
+            margin: 10px;
+        }
+        .child1{
+            
+            grid-column: 1/5;
+            grid-row:1/2;
+            background-color: blue;
+        }
+        .child2{
+            grid-column: 1/2;
+            grid-row: 2/4;
+            background-color:orangered;
+        }
+        .child3{
+            grid-column: 2/4;
+            grid-row: 2/4;
+            background-color:green;
+        }
+        .child4{
+            grid-column: 4/6;
+            grid-row: 2/4;
+            background-color:orangered;
+        }
+        .child5{
+           
+            grid-column: 1/5;
+            grid-row: 4/5;
+            background-color: blue;
+        }
+ }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child1"><center>header</center></div>
+        <div class="child2"><center>sidenav</center></div>
+        <div class="child3"><center>main content</center></div>
+        <div class="child4"><center>side bar</center></div>
+        <div class="child5"><center>footer</center></div>
+         
+    </div>
+</body>
+</html>
